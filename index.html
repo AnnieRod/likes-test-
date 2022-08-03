@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Likes assignment</title>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <h1>Network</h1>
+        </div>
+    </header>
+    <main>
+        <h1>Your Feed</h1>
+        <div class="content">
+            <aside class="mini-card">
+                <img src="user-circle.png" alt="profile placeholder">
+                <a href="#">Add an avatar</a>
+                <h2>James Doe</h2>
+            </aside>
+            <div class="sections">
+                <article class="card">
+                    <section class="upper">
+                        <h2>Neil M</h2>
+                        <div class="likes">
+                            <p id="like-count"> 9 like(s)</p>
+                            <button class="btn" onclick="addLike('#like-count',0)">Like</button>
+                        </div>
+                    </section>
+                    <p>I just set up this new discord bot, let me know what you all think. <a href="#">link</a></p>
+                </article>
+                <article class="card">
+                    <section class="upper">
+                        <h2>Nichole K</h2>
+                        <div class="likes">
+                            <p id="like-count2"> 12 like(s)</p>
+                            <button class="btn" onclick="addLike('#like-count2',1)">Like</button>
+                        </div>
+                    </section>
+                    <p>Just finished my <a href="#">next comic</a>, check it out</p>
+                </article>
+                <article class="card">
+                    <section class="upper">
+                        <h2>Jim R</h2>
+                        <div class="likes">
+                            <p id="like-count3"> 9 like(s)</p>
+                            <button class="btn" onclick="addLike('#like-count3',2)">Like</button>
+                        </div>
+                    </section>
+                    <p>I can't stop listening to the <a href="#">new album</a>. Who else is liking it?</p>
+                </article>
+            </div>
+        </div>
+    </main>
+</body>
+
+<script src="script.js"></script>
+</html>
